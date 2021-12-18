@@ -8,9 +8,9 @@ local LocalPlayer = Players.LocalPlayer
 local Character, Head, HumanoidRootPart, Humanoid, Camera
 local Backpack = LocalPlayer.Backpack
 local Mouse = LocalPlayer:GetMouse()
+Camera = workspace.CurrentCamera
 
 local function ReLocalize()
-    Camera = workspace.CurrentCamera
     Character = LocalPlayer.Character
 
     Head = Character:WaitForChild("Head")

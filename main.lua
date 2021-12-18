@@ -95,7 +95,7 @@ local function GetDistance(Vector3_1, Vector3_2)
     return (Vector3_1 - Vector3_2).Magnitude
 end
 
-LocalPlayer.PlayerAdded:Connect(ReLocalIze)
+LocalPlayer.CharacterAdded:Connect(ReLocalIze)
 
 -- Example
 

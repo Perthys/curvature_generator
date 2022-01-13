@@ -99,4 +99,4 @@ LocalPlayer.CharacterAdded:Connect(ReLocalIze)
 
 -- Example
 
-DolphinDive(HumanoidRootPart, HumanoidRootPart * CFrame.new(0, 5, 100), CFrame.new(0, 50, 0), 0.001, 2, true)
+return DolphinDive;

@@ -56,7 +56,11 @@ local function LookAt(Part1, PositionArg)
     Part1.CFrame = Position
 end
 
-local function DolphinDive(Start, End, CFrame, Quality, Delay)
+local function DolphinDive(Start, End, CFrame, Quality, Delay, Break)
+
+    if Break then
+        break
+    end
     local Curve = Instance.new("Part", workspace) -- Should've used CreatePartAtposition and added a cframe vararg argument (select(1, ...) or x) but i didnt care enough
     Curve.Transparency = 1
     Curve.Anchored = true
